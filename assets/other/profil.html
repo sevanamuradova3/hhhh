@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Profil Sayfası</title>
+</head>
+<body>
+    <div id="profileContainer">
+        <div id="profileHeader">
+            <div id="profileImageContainer">
+                <img id="profileImage" src="default-profile-image.jpg" alt="Profil Fotoğrafı">
+                <input type="file" id="profileImageInput" accept="image/*" onchange="changeProfileImage(event)">
+            </div>
+            <div id="profileInfo">
+                <h2>Ad Soyad</h2>
+                <p>Kullanıcı Adı: <span id="profileUsername">username</span></p>
+                <p>Email: <span id="profileEmail">example@example.com</span></p>
+                <div id="followCounts">
+                    <p>Takipçiler: <span id="followersCount">0</span></p>
+                    <p>Takip Edilenler: <span id="followingCount">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="profileMenu">
+            <button onclick="showProfileSettings()">Profil Ayarları</button>
+            <button onclick="showSavedPosts()">Kaydedilenler</button>
+            <button onclick="showLikedPosts()">Beğenilenler</button>
+        </div>
+
+        <div id="profileContent">
+            <div id="postCounts">
+                <p>Gönderi Sayısı: <span id="postsCount">0</span></p>
+            </div>
+            <div id="userPosts"></div>
+        </div>
+    </div>
+
+    <script src="./"></script>
+</body>
+</html>

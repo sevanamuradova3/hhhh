@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  @include center;
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);.form-container {
+  text-align: center;
+
+  form {
+    #loginInp {
+      width: 100%;
+      padding: 10px;
+margin-bottom: 15px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+    }
+#log{
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+    .question {
+      margin-top: 20px;
+
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  #resetPasswordForm {
+    display: none;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+}
+
+
